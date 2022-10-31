@@ -1,0 +1,66 @@
+body{ 
+    background-image:  url(img/fonfo.jpg );
+    background-size: cover;
+  background-repeat: no-repeat;}
+
+  h1{text-align: center;}
+nav{position: fixed ;
+top: 10px;}
+
+  .cuet{
+      width: 320px;
+      height: 420px;
+      background: rgb(0, 0, 0);
+      color:#fff;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform:translate(-50%,-50%);
+      box-sizing: border-box;
+     padding: 70px 30px; }
+
+     
+     .cuet .logo{width: 100px;
+    height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% -50px);}
+
+.cuet h1{margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;}
+
+.cuet label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;}
+
+.texto,.contraseña{border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;}
+
+.enviar{border:none;
+outline: none;
+height: 40px;
+background: #f70707d8;
+color: #fff;
+font-size:21px ;
+border-radius: 20px;}
+
+.cuet a{text-decoration: none;
+color: darkgrey;
+font-size: 12px;
+line-height : 20px;}
+.cuet a:hover{
+    color:#fff ;
+}
+header{padding: 10px;
+    background: white;
+}

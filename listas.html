@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogo</title>
+</head>
+<body>
+   <script src="funcion.js"> </script>
+   <div class="comp">
+    <nav > 
+        <div class="clase">
+        <p> mades-art7 artesanias en madera </p>
+         <a href="cuenta.html" class="navegacion"> iniciar sesion</a> 
+         <a href="index.html" class="navegacion"> inicio</a> </div>
+
+          <button  id="checkout" onclick="pay()"> <img src="img/carrito.png" alt=""> pagar</button>
+         </nav></div>
+         <br>
+         <h2 class=>productos disponibles</h2>
+           
+          <footer class="tep">
+         <section class="container flex  " >
+    <div class="columna expancion"> 
+
+       <!-- primer articulo-->
+        <img class="zass" src="img/bandeja.jpg"  >   <p class="infp" 
+        OnMouseOver="this.style.opacity=1;this.filter.alpha(opacity=0)"
+        OnMouseOut="this.style.opacity=0;this.filter.alpha(opacity=100)">algo para la informacion del articulo puede ser muy util
+      buscando </p>
+        <!--- maxima capacidad de caracteres de cada parrafo (60) aqui -->
+         <hr>
+         
+         <p> bandeja precio $ 12000</p>
+         <button class="bot" onclick="add('bandeja',12000)"> agregar</button>
+         <button class="bot" onclick="remove('bandeja',12000)">eliminar</button>
+         <hr>
+         
+
+          </div><!-- segundo articulo-->
+          <div class="columna expancion"> 
+            <img src="img/caja2.jpg" class="sep" alt="">
+            <hr>
+            <p>L deleniti $ 18000</p>
+         <button class="bot" onclick="add('l deleniti',18000)"> agregar</button>
+         <button class="bot" onclick="remove('bandeja',18000)">eliminar</button>
+         <hr>  
+        </div>
+        <!-- tercer articulo-->
+            <div class="columna expancion">  
+                <img src="img/caja3.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p id="compra1"> exagonal con tapa $ 24000</p>
+            <button class="bot" onclick="add('exagonal',24000)"> agregar</button>
+            <button class="bot" onclick="remove('bandeja',24000)">eliminar</button>
+            <hr>
+         </div>  
+         <!-- cuarto articulo-->
+            <div class="columna expancion"> 
+                <img src="img/caja4.jpg" class="sep" width="225px" height="225px" >  
+                <hr>
+                <p> servilletero $ 14000</p>
+            <button class="bot" onclick="add('servilletero',14000)"> agregar</button>
+            <button class="bot" onclick="remove('bandeja',14000)">eliminar</button>
+            <hr>
+        </div>      
+        <!-- quinto articulo-->     
+            <div class="columna expancion"> 
+                <img src="img/estante.jpg" class="sep" width="225px" height="225px" >
+                <hr>
+                <p> deleniti $21000</p>
+             <button class="bot" onclick="add('deleniti',21000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',21000)">eliminar</button>
+             <hr>
+            </div>  
+            <!-- sexto articulo-->      
+             <div class="columna expancion">
+                <img src="img/descarga.jpg" class="sep" width="225px" height="225px"> 
+                <br>
+                <p> soporte para telefono $20000.</p>
+             <button class="bot" onclick="add('soporte para telefono',20000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',20000)">eliminar</button>
+             <br>
+            </div>
+            
+
+            </section>
+         <br> <br>
+
+            <section class="container flex">
+             <div class="columna expancion">  
+                 <!-- septimo articulo-->
+                <img src="img/torre.jpg"  class="sep" width="225px" height="225px" >
+                <hr>
+                <p> deleniti $15000</p>
+             <button class="bot" onclick="add('deleniti',15000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',15000)">eliminar</button>
+             <hr>
+            </div>
+
+             <div class="columna expancion"> 
+                <img src="img/mad.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p> deleniti. $17000 </p>
+             <button class="bot" onclick="add('delen',17000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',17000)">eliminar</button>
+             <hr>
+            </div>
+            
+             <div class="columna expancion">
+                <img src="img/llaverp.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p> llaveros personalisados $8000.</p>
+             <button class="bot" onclick="add('llaveros personalisados',8000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',8000)">eliminar</button>
+             <hr>
+            </div>
+           
+             <div class="columna expancion">
+                <img src="img/gabeta.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p> caja con cajones $19000 </p>
+             <button class="bot" onclick="add('caja con cajones',19000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',19000)">eliminar</button>
+             <hr>
+            </div>
+             <div class="columna expancion">
+                <img src="img/s.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p> caja organizadora $ 21000</p>
+             <button class="bot" onclick="add('caja organizadora',21000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',21000)">eliminar</button>
+             <hr>
+            </div>
+           
+             <div class="columna expancion">
+                <img src="img/pozo.jpg" class="sep" width="225px" height="225px">
+                <hr>
+                <p> pozo $22000 </p>
+             <button class="bot" onclick="add('pozo',22000)"> agregar</button>
+             <button class="bot" onclick="remove('bandeja',22000)">eliminar</button>
+             <hr>
+             
+            </section> </footer>
+       
+</body>
+</html>

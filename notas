@@ -1,0 +1,68 @@
+
+<p id="texto_inf" class="text" >bandeja de madera no muy grande utilizada</p>
+        <p class="text">para regalos es una bandeja practica y ligera</p>
+
+
+        <label for="">genero:</label> 
+    <label  for="">hombre</label>
+    <input id="h" type="radio" name="d" >
+    <label for="">mujer</label>
+    <input id="m" type="radio" name="d">
+
+    <div><br></div>
+    <label for="">edad</label>
+    <input type="number"placeholder="escriba su edad" name="edad">
+    <div><br></div>
+    <label for="">correo electronico</label>
+    <input type="email"placeholder=" correo electronico"name="correo" >
+
+
+
+
+    <form action="php/actualizar.php" method="POST" class="formulario" > 
+        <fieldset  style="background-color: darkgray;">
+            <label class="formtitulo">ACTUALIZAR registro <?php echo $row ['identificacion'] ?></label>
+            <label for="" class="formulario_label">nombre</label>
+            <input type="text" class="formulario_input" name="nombre" <?php echo $row['nombre'] ?>>
+            <label for="" class="formulario_label">apellido</label>
+            <input type="text" class="formulario_input" name="apellido" value ="<?php echo $row ['apellido'] ?>">
+            <label for="" class="formulario_label">genero</label>
+              <input type="radio" class="formulario_input" name="genero" checked  value ="M">
+   
+            <input type="radio" class="formulario_input" name="genero" checked value ="F">
+            <label for="" class="formulario_label">fecha de nacimiento   </label>
+            <input type="date" class="formulario_input" name="edad" value ="<?php echo $row ['edad'] ?>">
+            <label for="" class="formulario_label">Correo</label>
+            <input type="text" class="formulario_input" name="correo" value ="<?php echo $row ['correo'] ?>">
+            <label for="" class="formulario_label">Teléfono</label>
+           
+            <input type="text" class="formulario_input" name="telefono" value ="<?php echo $row ['telefono'] ?>">
+            <label for="" class="formulario_label">direccion</label>
+            <input type="text" class="formulario_input" name="direccion" value ="<?php echo $row ['direccion'] ?>">
+            <label for="" class="formulario_label">contraseña</label>
+            <input type="text" class="formulario_input" name="contrasena" value ="<?php echo $row ['contrasena'] ?>">  
+            <input type="hidden" name="id" value="<?php echo $row ['identificacion'] ?>">
+            <input type="submit" class="form_submit">
+        </form> 
+        <form action="php/usuarios.php" method="POST" class="mover"> 
+          if(isset($_POST['nombre'])){
+            $nombre =$_POST['nombre'];
+            $apellido =$_POST['apellido'];
+            $contrasena =$_POST['contraseña'];
+            $campos = array();
+            if($nombre ==""){
+                array_push($campos,"el nombre no puede estar vacio");}
+        
+                if($apellido==""){
+                array_push($campos,"el apellido no puede estar vacio");}
+                if($contraseña=="" || strlen ($contrasena)<6);{
+                array_push($campos,"el campo contraseña no puede estar vacio o tener menos de 6 caracteres");}
+                            
+                if(count($campos)>0){
+                 echo "<div class='error'>";
+                for($i = 0; $i <count($campos); $i++){
+                 echo"<li>".$campos[$i]."</i>";}
+                 }else{echo"<div class='correcto>'
+                        datos correctos";}
+                        echo"</div>";}?>
+                        <a href=""></a>
